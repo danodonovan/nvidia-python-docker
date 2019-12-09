@@ -1,6 +1,7 @@
 FROM nvidia/cuda:10.1-runtime-ubuntu18.04
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
+        libcudnn7 \
         software-properties-common \
         && \
     add-apt-repository --yes ppa:deadsnakes/ppa && \
