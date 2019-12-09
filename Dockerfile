@@ -11,6 +11,5 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
     apt-get clean && \
 rm -rf /var/lib/apt/lists/*
 
-# *sobs
+# *sob
 RUN curl https://bootstrap.pypa.io/get-pip.py | python3.7 -
-RUN pip install spell
